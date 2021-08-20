@@ -66,9 +66,9 @@ void initGPIO(void){
 	//Attach interrupts to Buttons	//Write your logic here
 
 
-        wiringPiISR(BTNS[0],INT_EDGE_BOTH,hourInc);
+        wiringPiISR(BTNS[0],INT_EDGE_RISING,hourInc);
 
-        wiringPiISR(BTNS[1],INT_EDGE_BOTH,minInc);
+        wiringPiISR(BTNS[1],INT_EDGE_RISING,minInc);
 
 
 
